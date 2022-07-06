@@ -1,0 +1,53 @@
+{
+  "set1": [
+    {
+      "imgSrc": "images/circle.png"
+    },
+    {
+      "imgSrc": "images/oval.png"
+    },
+    {
+      "imgSrc": "images/triangle.png"
+    },
+    {
+      "imgSrc": "images/square.png"
+    },
+    {
+      "imgSrc": "images/trapezium.png"
+    }
+  ],
+  "set2": [
+    {
+      "imgSrc": "images/diamond.png"
+    },
+    {
+      "imgSrc": "images/rhombus.png"
+    },
+    {
+      "imgSrc": "images/parallelogram.png"
+    },
+    {
+      "imgSrc": "images/rectangle.png"
+    },
+    {
+      "imgSrc": "images/pentagon.png"
+    }
+  ],
+  "set3": [
+    {
+      "imgSrc": "images/hexagon.png"
+    },
+    {
+      "imgSrc": "images/heptagon.png"
+    },
+    {
+      "imgSrc": "images/octagon.png"
+    },
+    {
+      "imgSrc": "images/nonagon.png"
+    },
+    {
+      "imgSrc": "images/decagon.png"
+    }
+  ]
+}
