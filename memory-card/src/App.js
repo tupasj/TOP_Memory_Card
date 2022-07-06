@@ -6,6 +6,7 @@ import "./styles/styles.css";
 const App = () => {
   const [points, setPoints] = useState(0);
   const [bestPts, setBestPts] = useState(0);
+  const [level, setLevel] = useState(1);
 
   const addPoint = () => {
     setPoints(points + 1);
@@ -19,10 +20,10 @@ const App = () => {
     <>
       <header>
         <span>Memory Game</span>
-        <Scoreboard points={points} bestPts={bestPts} />
+        <Scoreboard points={points} bestPts={bestPts} level={level}/>
       </header>
       <main>
-        <Cards onClick={addPoint} />
+        <Cards level={level} onClick={addPoint} />
       </main>
     </>
   );
