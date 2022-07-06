@@ -1,53 +1,83 @@
 {
   "set1": [
     {
-      "imgSrc": "images/circle.png"
+      "id": 1,
+      "src": "https://cdn.jsdelivr.net/gh/tupasj/TOP_Memory_Card/memory-card/src/assets/images/circle.png",
+      "alt": "circle"
     },
     {
-      "imgSrc": "images/oval.png"
+      "id": 2,
+      "src": "https://cdn.jsdelivr.net/gh/tupasj/TOP_Memory_Card/memory-card/src/assets/images/oval.png",
+      "alt": "oval"
     },
     {
-      "imgSrc": "images/triangle.png"
+      "id": 3,
+      "src": "https://cdn.jsdelivr.net/gh/tupasj/TOP_Memory_Card/memory-card/src/assets/images/triangle.png",
+      "alt": "triangle"
     },
     {
-      "imgSrc": "images/square.png"
+      "id": 4,
+      "src": "https://cdn.jsdelivr.net/gh/tupasj/TOP_Memory_Card/memory-card/src/assets/images/square.png",
+      "alt": "square"
     },
     {
-      "imgSrc": "images/trapezium.png"
+      "id": 5,
+      "src": "https://cdn.jsdelivr.net/gh/tupasj/TOP_Memory_Card/memory-card/src/assets/images/trapezium.png",
+      "alt": "trapezium"
     }
   ],
   "set2": [
     {
-      "imgSrc": "images/diamond.png"
+      "id": 1,
+      "src": "https://cdn.jsdelivr.net/gh/tupasj/TOP_Memory_Card/memory-card/src/assets/images/diamond.png",
+      "alt": "diamond"
     },
     {
-      "imgSrc": "images/rhombus.png"
+      "id": 2,
+      "src": "https://cdn.jsdelivr.net/gh/tupasj/TOP_Memory_Card/memory-card/src/assets/images/rhombus.png",
+      "alt": "rhombus"
     },
     {
-      "imgSrc": "images/parallelogram.png"
+      "id": 3,
+      "src": "https://cdn.jsdelivr.net/gh/tupasj/TOP_Memory_Card/memory-card/src/assets/images/parallelogram.png",
+      "alt": "parallelogram"
     },
     {
-      "imgSrc": "images/rectangle.png"
+      "id": 4,
+      "src": "https://cdn.jsdelivr.net/gh/tupasj/TOP_Memory_Card/memory-card/src/assets/images/rectangle.png",
+      "alt": "rectangle"
     },
     {
-      "imgSrc": "images/pentagon.png"
+      "id": 5,
+      "src": "https://cdn.jsdelivr.net/gh/tupasj/TOP_Memory_Card/memory-card/src/assets/images/pentagon.png",
+      "alt": "pentagon"
     }
   ],
   "set3": [
     {
-      "imgSrc": "images/hexagon.png"
+      "id": 1,
+      "src": "https://cdn.jsdelivr.net/gh/tupasj/TOP_Memory_Card/memory-card/src/assets/images/hexagon.png",
+      "alt": "hexagon"
     },
     {
-      "imgSrc": "images/heptagon.png"
+      "id": 2,
+      "src": "https://cdn.jsdelivr.net/gh/tupasj/TOP_Memory_Card/memory-card/src/assets/images/heptagon.png",
+      "alt": "heptagon"
     },
     {
-      "imgSrc": "images/octagon.png"
+      "id": 3,
+      "src": "https://cdn.jsdelivr.net/gh/tupasj/TOP_Memory_Card/memory-card/src/assets/images/octagon.png",
+      "alt": "octagon"
     },
     {
-      "imgSrc": "images/nonagon.png"
+      "id": 4,
+      "src": "https://cdn.jsdelivr.net/gh/tupasj/TOP_Memory_Card/memory-card/src/assets/images/nonagon.png",
+      "alt": "nonagon"
     },
     {
-      "imgSrc": "images/decagon.png"
+      "id": 5,
+      "src": "https://cdn.jsdelivr.net/gh/tupasj/TOP_Memory_Card/memory-card/src/assets/images/decagon.png",
+      "alt": "decagon"
     }
   ]
 }
