@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import cardSets from "../assets/cardSets.json";
 import shuffleArray from "../utility/shuffleArray";
 
 const Cards = (props) => {
   const [clickedCards, setClickedCards] = useState([]);
-  const level = props.level;
-  const addPoint = props.addPoint;
+  const { points, addPoint, level, nextLevel } = props;
 
   const getClickedCard = (e) => {
     const clickedCard = e.currentTarget;
@@ -22,8 +21,8 @@ const Cards = (props) => {
     const alreadyClicked = checkClicked(clickedCard);
     // If alreadyClicked, clear clickedCards array and reset normal score. Put into resetLevel function.
     // If !alreadyClicked, addPoint.
-    // console.log(alreadyClicked);
-    addPoint();
+    const cardsAmount = cardSetData.length;
+    addPoint(cardsAmount);
   };
 
   const chooseCardSet = (level) => {
@@ -50,6 +49,14 @@ const Cards = (props) => {
       </div>
     );
   })
+
+  // On every points update, conditional nextLevel.
+  const limit = cardSetData.length;
+  useEffect(() => {
+    if (points >= limit) {
+      nextLevel();
+    }
+  }, [points]);
 
   return <div className="card-container">{cards}</div>;
 };

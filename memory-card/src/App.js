@@ -14,22 +14,25 @@ const App = () => {
     }
   };
 
-  // If pts >= cardsArray.length (computed), nextLevel().
-  const addPoint = (limit) => {
+  const addPoint = () => {
     addBestPt();
     setPoints(points + 1);
   };
 
   // If level > 3, congratulations and play again button sets level to 1.
+  const nextLevel = () => {
+    setLevel(level + 1);
+    // clear clickedCards array and reset normal score. resetLevel().
+  };
 
   return (
     <>
       <header>
         <span>Memory Game</span>
-        <Scoreboard points={points} bestPts={bestPts} level={level}/>
+        <Scoreboard points={points} bestPts={bestPts} level={level} />
       </header>
       <main>
-        <Cards level={level} addPoint={addPoint} />
+        <Cards points={points} addPoint={addPoint} level={level} nextLevel={nextLevel} />
       </main>
     </>
   );
