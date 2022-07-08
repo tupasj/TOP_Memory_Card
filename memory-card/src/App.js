@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Scoreboard from "./components/Scoreboard";
 import Cards from "./components/Cards";
 import "./styles/styles.css";
@@ -21,8 +21,9 @@ const App = () => {
 
   // If level > 3, congratulations and play again button sets level to 1.
   const nextLevel = () => {
+    setPoints(0);
+    setBestPts(0);
     setLevel(level + 1);
-    // clear clickedCards array and reset normal score. resetLevel().
   };
 
   return (
@@ -32,7 +33,7 @@ const App = () => {
         <Scoreboard points={points} bestPts={bestPts} level={level} />
       </header>
       <main>
-        <Cards points={points} addPoint={addPoint} level={level} nextLevel={nextLevel} />
+        <Cards points={points} setPoints={setPoints} addPoint={addPoint} level={level} nextLevel={nextLevel} />
       </main>
     </>
   );
