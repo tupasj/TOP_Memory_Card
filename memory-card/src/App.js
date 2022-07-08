@@ -19,11 +19,14 @@ const App = () => {
     setPoints(points + 1);
   };
 
-  // If level > 3, congratulations and play again button sets level to 1.
   const nextLevel = () => {
     setPoints(0);
     setBestPts(0);
     setLevel(level + 1);
+    if (level >= 3) {
+      console.log('Congratulations');
+      setLevel(1);
+    }
   };
 
   return (
