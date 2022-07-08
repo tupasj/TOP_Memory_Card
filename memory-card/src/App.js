@@ -8,13 +8,19 @@ const App = () => {
   const [bestPts, setBestPts] = useState(0);
   const [level, setLevel] = useState(1);
 
-  const addPoint = () => {
-    setPoints(points + 1);
-  }
-
   const addBestPt = () => {
-    setBestPts(bestPts + 1);
-  }
+    if (points >= bestPts) {
+      setBestPts(bestPts + 1);
+    }
+  };
+
+  // If pts >= cardsArray.length (computed), nextLevel().
+  const addPoint = (limit) => {
+    addBestPt();
+    setPoints(points + 1);
+  };
+
+  // If level > 3, congratulations and play again button sets level to 1.
 
   return (
     <>

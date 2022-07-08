@@ -20,23 +20,30 @@ const Cards = (props) => {
     const clickedCard = getClickedCard(e);
     setClickedCards(clickedCards.concat(clickedCard));
     const alreadyClicked = checkClicked(clickedCard);
+    // If alreadyClicked, clear clickedCards array and reset normal score. Put into resetLevel function.
+    // If !alreadyClicked, addPoint.
     // console.log(alreadyClicked);
     addPoint();
   };
 
+  const chooseCardSet = (level) => {
+    let cardSetData;
+    if (level === 1) {
+      cardSetData = cardSets.set1;
+    } else if (level === 2) {
+      cardSetData = cardSets.set2;
+    } else if (level === 3) {
+      cardSetData = cardSets.set3;
+    }
+    return cardSetData;
+  };
+
   //Get cards data from JSON file
-  let currentSetData;
-  if (level === 1) {
-    currentSetData = cardSets.set1;
-  } else if (level === 2) {
-    currentSetData = cardSets.set2;
-  } else if (level === 3) {
-    currentSetData = cardSets.set3;
-  }
-  shuffleArray(currentSetData);
+  const cardSetData = chooseCardSet(level);
+  shuffleArray(cardSetData);
 
   //Use JSON data to generate the card divs
-  const cards = currentSetData.map((card) => {
+  const cards = cardSetData.map((card) => {
     return (
       <div key={card.id} id={card.id} className="card" onClick={handleClick}>
         <img src={card.src} alt={card.alt}></img>
